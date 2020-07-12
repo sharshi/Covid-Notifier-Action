@@ -1,0 +1,16 @@
+
+name: 'Covid Notifier'
+description: 'Notifies Covid data to Slack'
+inputs:
+  URL:
+    description: 'The Slack webhook'
+    required: true
+  STATE:
+    description: 'The state to return'
+    required: true
+outputs:
+  result:
+    description: 'The result returned by Slack'
+runs:
+  using: 'node12'
+  main: 'index.js'
