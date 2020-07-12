@@ -13,4 +13,4 @@ outputs:
     description: 'The result returned by Slack'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'

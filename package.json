@@ -2,14 +2,16 @@
   "name": "covid-notifier-action",
   "version": "0.1.0",
   "description": "GitHub Action for Notifying Covid info to Slack",
-  "main": "index.js",
-  "repository": "git@github.com:sharshi/fetch-deploy-hook-action.git",
-  "license": "MPL-2.0",
-  "private": false,
+  "main": "dist/index.js",
+  "repository": "git@github.com:sharshi/covid-notifier-action.git",
   "scripts": {
-    "start": "node index.js"
+    "build": "ncc build index.js -o dist",
+    "pre-commit": "echo hi\n\n"
   },
   "dependencies": {
     "@actions/core": "^1.2.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
   }
 }
