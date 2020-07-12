@@ -6,7 +6,7 @@
   "repository": "git@github.com:sharshi/covid-notifier-action.git",
   "scripts": {
     "build": "ncc build index.js -o dist",
-    "pre-commit": "echo hi\n\n"
+    "pre-commit": "echo hi\n\n\n"
   },
   "dependencies": {
     "@actions/core": "^1.2.0"
